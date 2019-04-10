@@ -1,5 +1,6 @@
 import { ADD_TODO } from '../actions';
 import { RENDER_TODO_LIST } from '../actions';
+import { USER_PROFILE_LOADED } from '../actions';
 
 const initialState = {
   toDoList: []
@@ -19,6 +20,7 @@ export default function toDoApp(state = initialState, action) {
           ...action.toDoItem
         }
       ];
+    case USER_PROFILE_LOADED:
       return {
         ...state,
         toDoList: newToDoList
