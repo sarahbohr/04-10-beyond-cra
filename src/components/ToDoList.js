@@ -14,7 +14,7 @@ const ToDoList = ({ toDoList }) => (
   </Jumbotron>
 );
 
-ToDoList.PropTypes = {
+ToDoList.propTypes = {
   toDoList: PropTypes.arrayOf(
     PropTypes.shape({
       _id: PropTypes.string.isRequired,
